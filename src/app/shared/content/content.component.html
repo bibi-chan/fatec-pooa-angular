@@ -1,10 +1,14 @@
-<div class="margin-top">
-  <table>
+<div class="mt-5 container">
+  <table class="table table-hover">
+    <thead>
     <tr>
-      <th><h3 class="left">Cursos</h3></th>
+      <th><h3 class="left text-dark">Cursos</h3></th>
     </tr>
+  </thead>
+  <tbody>
     <tr *ngFor="let c of cursosFatecIpiranga">
-      <td>{{ c.curso }}</td>
+      <td class="text-dark">{{ c.curso }}</td>
     </tr>
+  </tbody>
   </table>
 </div>
