@@ -1,0 +1,9 @@
+<div class="container">
+  <form action="" class="pt-3">
+    <div class="form-group">
+      <label for="curso"><strong>+Add curso</strong></label>
+  <input #curso type="text" class="form-control" id="curso" name="curso" [(ngModel)]="cursoModel.curso" placeholder="Digite um curso">
+  <button type="button" class="btn btn-dark btn-block" (click)="adicionar(curso.value)">Adicionar</button>
+</div>
+  </form>
+  </div>
