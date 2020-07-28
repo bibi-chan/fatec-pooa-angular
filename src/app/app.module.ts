@@ -7,6 +7,8 @@ import { HeaderComponent } from './shared/header/header.component';
 import { ContentComponent } from './shared/content/content.component';
 import { DataBidingComponent } from './shared/data-biding/data-biding.component';
 import { FormsModule} from '@angular/forms';
+import { DirectiveComponent } from './shared/directive/directive.component';
+import { CardContentComponent } from './shared/card-content/card-content.component';
 
 @NgModule({
   declarations: [
@@ -14,6 +16,8 @@ import { FormsModule} from '@angular/forms';
     HeaderComponent,
     ContentComponent,
     DataBidingComponent,
+    DirectiveComponent,
+    CardContentComponent,
   ],
   imports: [
     BrowserModule,

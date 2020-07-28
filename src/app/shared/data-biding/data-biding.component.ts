@@ -18,6 +18,11 @@ export class DataBidingComponent implements OnInit {
 
   }
 
+  adicionando(event): void {
+    console.log(event.target.value);
+    this.curso = event.target.value;
+  }
+
   adicionar(curso): void {
     console.log(curso);
     this.curso = curso;
