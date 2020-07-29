@@ -10,6 +10,7 @@ import { FormsModule} from '@angular/forms';
 import { DirectiveComponent } from './shared/directive/directive.component';
 import { CardContentComponent } from './shared/card-content/card-content.component';
 import { FormComponent } from './shared/form/form.component';
+import { FundoDirective } from './shared/fundo.directive';
 
 @NgModule({
   declarations: [
@@ -20,6 +21,7 @@ import { FormComponent } from './shared/form/form.component';
     DirectiveComponent,
     CardContentComponent,
     FormComponent,
+    FundoDirective,
   ],
   imports: [
     BrowserModule,
