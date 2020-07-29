@@ -1,0 +1,40 @@
+<div class="container">
+  <form #form="ngForm" (ngSubmit)="salvar(form)">
+    <div class="row">
+      <div class="form-group col-md-12">
+        <label for="curso" [ngClass]="obterFundo()">Cursos</label>
+        <select id="curso" name="curso" [(ngModel)]="usuario.curso" class="form-control">
+          <option *ngFor="let c of cursos">{{ c.curso }}</option>
+        </select>
+      </div>
+
+    </div>
+
+    <div class="row">
+      <div class="form-group col-6">
+        <label for="nomeInput" [ngClass]="obterFundo()">Nome</label>
+          <input type="text" #nome placeholder="nome" id="nomeInput" name="nome" [(ngModel)]="usuario.nome" class="form-control p-4">
+      </div>
+      <div class="form-group col-md-6">
+        <label for="idade" [ngClass]="obterFundo()">Idade</label>
+      <input type="text" #idade placeholder="idade" id="idade" name="idade" [(ngModel)]="usuario.idade" class="form-control p-4">
+      </div>
+
+    </div>
+
+    <div class="row">
+      <div class="col-12">
+        <button type="submit" [ngStyle]="obterEstilosParaOBotao()">Enviar</button>
+      </div>
+    </div>
+  </form>
+</div>
+
+<div class="container mt-5" *ngFor="let u of usuarios">
+  <div [ngClass]="obterFundo()" *ngIf="u.nome !== ''">
+    <div class="card col-12" >
+      <div class="card-header text-primary"> <strong>{{ u.nome }} | {{ u.idade }}</strong></div>
+      <div class="card-body">{{ u.curso }}</div>
+    </div>
+  </div>
+</div>
