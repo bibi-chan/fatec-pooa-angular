@@ -11,6 +11,8 @@ import { DirectiveComponent } from './shared/directive/directive.component';
 import { CardContentComponent } from './shared/card-content/card-content.component';
 import { FormComponent } from './shared/form/form.component';
 import { FundoDirective } from './shared/fundo.directive';
+import { PrevisaoComponent } from './shared/previsao/previsao.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -22,11 +24,13 @@ import { FundoDirective } from './shared/fundo.directive';
     CardContentComponent,
     FormComponent,
     FundoDirective,
+    PrevisaoComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

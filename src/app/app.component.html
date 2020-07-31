@@ -1,9 +1,26 @@
-<div appFundo>
+<div class="container">
+  <div class="row mt-5 justify-content-center">
+    <div class="input-group col-6">
+      <input type="text" class="form-control" placeholder="digite a cidade desejada...">
+      <div class="input-group-append">
+        <button class="btn btn-info" type="submit">Pesquisar</button>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <app-previsao class="col-md-4" *ngFor="let previsao of previsoes" [previsao]="previsao"></app-previsao>
+  </div>
+</div>
+
+
+
+
+<!-- <div appFundo>
 
 <app-header></app-header>
 <app-content></app-content>
 
-</div>
+</div> -->
 
 
 <!-- <app-data-biding></app-data-biding> -->
