@@ -42,6 +42,12 @@ export class PrevisoesService {
       );
   }
 
+  getPrevisaoCidade(city): Observable<Previsao[]> {
+    return this.httpClient.get<Previsao[]>(
+      `http://api.openweathermap.org/data/2.5/forecast?q=${city}&appid=3cc01aec87c58913307e3d4503b91099&units=metric&lang=pt_br&cnt=16`
+    );
+  }
+
   // obterPrevisoesMock(): Previsao[] {
   //   return this.previsoes;
   // }
